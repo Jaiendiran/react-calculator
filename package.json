@@ -49,5 +49,13 @@
   "bugs": {
     "url": "https://github.com/Jaiendiran/react-calculator/issues"
   },
-  "homepage": "https://github.com/Jaiendiran/react-calculator#readme"
+  "homepage": "https://github.com/Jaiendiran/react-calculator#readme",
+  "devDependencies": {},
+  "keywords": [
+    "Calculator",
+    "React",
+    "Calculator",
+    "React",
+    "App"
+  ]
 }
