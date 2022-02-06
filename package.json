@@ -6,15 +6,12 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,22 +37,21 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jaiendiran/react-calculator.git"
   },
-  "author": "Jai",
+  "keywords": [
+    "React",
+    "App",
+    "React",
+    "Calculator"
+  ],
+  "author": "Jaiendiran .M",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jaiendiran/react-calculator/issues"
   },
-  "homepage": "https://github.com/Jaiendiran/react-calculator#readme",
-  "devDependencies": {},
-  "keywords": [
-    "Calculator",
-    "React",
-    "Calculator",
-    "React",
-    "App"
-  ]
+  "homepage": "https://github.com/Jaiendiran/react-calculator#readme"
 }
