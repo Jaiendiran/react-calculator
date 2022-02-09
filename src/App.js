@@ -11,7 +11,7 @@ export const ACTIONS = {
   DELETE: 'delete',
   EVALUATE: 'evaluate',
 }
-
+// Reducer function for the App component
 function reducer (state, { type, payload }) {
     switch (type) {
       case ACTIONS.ADD:
@@ -97,7 +97,7 @@ function reducer (state, { type, payload }) {
         }
     }
 }
-
+// Evaluates the expression
 function evaluate({previousOperand, currentOperand, operation}) {
   const prev = parseFloat(previousOperand)
   const curr = parseFloat(currentOperand)
@@ -122,11 +122,11 @@ function evaluate({previousOperand, currentOperand, operation}) {
 
   return computation.toString()
 }
-
+// Object enables language-sensitive number formatting
 const INTEGER_FORMATTER = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
 })
-
+// Formats values to display in the output
 function formatOperand(operand) {
   if(operand == null) return
 
@@ -136,7 +136,7 @@ function formatOperand(operand) {
 
   return INTEGER_FORMATTER.format(integer) + "." + decimal
 }
-
+// Main App component
 function App() {
   const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(reducer, {});
   
@@ -148,7 +148,7 @@ function App() {
       </div>
       <button className="span-two" onClick={() => dispatch({type: ACTIONS.CLEAR})}>AC</button>
       <button onClick={() => dispatch({type: ACTIONS.DELETE})}>DEL</button>
-      <OperationButton operation='+' dispatch={dispatch} />      
+      <OperationButton operation='÷' dispatch={dispatch} />      
       <DigitButton digit='1' dispatch={dispatch} />
       <DigitButton digit='2' dispatch={dispatch} />
       <DigitButton digit='3' dispatch={dispatch} />
